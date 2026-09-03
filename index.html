@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Wedding of Andrew & Esa</title>
+    <link rel="icon" type="image/png" href="assets/decorations/ae-seal.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="meirahmawati no-scroll">
+    <!-- QR Invitation Floating Bar -->
+    <div class="qr-invitation" onclick="showQrInvitation()">
+      <div class="d-flex justify-content-center gap-2 align-items-center">
+        <svg
+          class="svg-inline--fa fa-qrcode"
+          width="1em"
+          height="1em"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="qrcode"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          data-fa-i2svg=""
+        >
+          <path
+            fill="currentColor"
+            d="M0 80C0 53.5 21.5 32 48 32l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48L0 80zM64 96l0 64 64 0 0-64L64 96zM0 336c0-26.5 21.5-48 48-48l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96zm64 16l0 64 64 0 0-64-64 0zM304 32l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm80 64l-64 0 0 64 64 0 0-64zM256 304c0-8.8 7.2-16 16-16l64 0c8.8 0 16 7.2 16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16l0 96c0 8.8-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-160zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z"
+          ></path>
+        </svg>
+        <p class="m-0 fw-bold" style="color: var(--wedding-burgundy)">QR Invitation For</p>
+      </div>
+      <div class="text-secondary text-center mt-1" style="color: var(--wedding-forest-dark) !important; font-weight: 600;">Bapak / Ibu / Saudara / i</div>
+      <div class="qr-image mt-2 text-center">
+        <img src="assets/img/qr.webp" alt="qr-image" class="img-fluid" style="border-radius: 8px; max-width: 140px;" />
+      </div>
+    </div>
+
+    <!-- Desktop Fixed Left Cover (69.5%) -->
+    <section class="cover-large" data-aos="fade-down">
+      <img src="assets/decorations/ae-seal.png" class="cover-seal" alt="AE Monogram Seal" />
+      <h2 class="header-2 font-body" style="font-size: 2rem !important; letter-spacing: 2px;">
+        THE WEDDING OF
+      </h2>
+      <h1 class="header-1 font-heading" style="font-size: 4.5rem !important">
+        Andrew &amp; Esa
+      </h1>
+      <h1 class="header-1 font-body" style="font-size: 1.3rem !important">
+        <b>Sabtu, 3 Oktober 2026</b>
+      </h1>
+    </section>
+
+    <!-- Main Right Content (30.5% Desktop, 100% Mobile) -->
+    <section class="main" id="main">
+      <div class="main-bg"></div>
+
+      <!-- Welcome Opening Screen (Royal Arch Remake) -->
+      <section id="welcome" class="welcome-screen" data-aos="fade-down">
+        <div class="welcome-bg-motif"></div>
+
+        <div class="welcome-wrapper">
+          <div class="welcome-card-royal">
+            <!-- Corner Floral Ornaments -->
+            <img src="assets/decorations/floral-cream-left.png" class="welcome-floral-left" alt="Floral Decoration" />
+            <img src="assets/decorations/floral-cream-right.png" class="welcome-floral-right" alt="Floral Decoration" />
+
+            <!-- AE Wax Seal at Top Crown -->
+            <div class="welcome-seal-wrapper">
+              <img src="assets/decorations/ae-seal.png" class="welcome-seal-img" alt="AE Monogram Seal" />
+            </div>
+
+            <!-- Arched Photo Window -->
+            <div class="welcome-portrait-window">
+              <img
+                src="assets/img/prewedding/3.webp"
+                class="welcome-portrait-img"
+                alt="The Wedding of Andrew &amp; Esa"
+              />
+              <div class="welcome-portrait-overlay"></div>
+            </div>
+
+            <!-- Monogram Locket Divider -->
+            <div class="welcome-locket-divider">
+              <img src="assets/decorations/bell-bow-cream.png" alt="Locket Ribbon" />
+            </div>
+
+            <!-- Typography & Details -->
+            <div class="welcome-details">
+              <p class="welcome-pretitle">THE WEDDING OF</p>
+              <h1 class="welcome-couple-name">Andrew &amp; Esa</h1>
+              <p class="welcome-date">
+                <i class="bi bi-calendar2-heart me-1"></i> Sabtu, 3 Oktober 2026
+              </p>
+
+              <!-- Guest Invitation Tag -->
+              <div class="welcome-guest-card">
+                <span class="guest-salutation">Kepada Yth. Bapak/Ibu/Saudara/i:</span>
+                <h3 class="guest-name" id="guest-name">Tamu Undangan</h3>
+              </div>
+            </div>
+
+            <!-- Open Button Action -->
+            <div class="welcome-action-wrap">
+              <button
+                class="btn btn-invites btn-welcome-action"
+                onclick="openInvites()"
+              >
+                <i class="bi bi-envelope-open-heart-fill me-2"></i> Buka Undangan
+              </button>
+              <span class="welcome-sound-hint">
+                <i class="bi bi-music-note-beamed me-1"></i> Mengandung latar musik
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Invitation Content -->
+      <section id="content-wedding">
+        <!-- Header Section (After opening) -->
+        <section id="header" class="custom-container" data-aos="fade-down">
+          <div
+            class="welcome-container"
+            style="
+              border-radius: 20px;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div class="text-center">
+              <img src="assets/decorations/ae-seal.png" class="header-seal" alt="AE Monogram" />
+              <h2 class="header-2 font-body" style="letter-spacing: 2px;">
+                THE WEDDING OF
+              </h2>
+              <h1
+                class="header-1 font-heading"
+                style="font-size: 4rem !important"
+              >
+                Andrew <br />&amp;<br />
+                Esa
+              </h1>
+              <h2 class="header-2 font-body mt-2">Sabtu, 3 Oktober 2026</h2>
+            </div>
+            <dotlottie-player
+              src="assets/img/lottie/1.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 50px; height: 50px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </section>
+
+        <!-- Couple Profiles -->
+        <section id="wedding-of" class="custom-container">
+          <img src="assets/decorations/floral-cream-left.png" class="wedding-floral-left" alt="Floral Decoration" />
+          <img src="assets/decorations/floral-cream-right.png" class="wedding-floral-right" alt="Floral Decoration" />
+
+          <h2 class="font-title">
+            MEMPELAI
+          </h2>
+
+          <div class="couple man mt-3" data-aos="fade-left">
+            <img src="assets/img/man.webp" class="wedding-of-frame" alt="Teuku Andrew" />
+
+            <div class="couple-details mt-3">
+              <div class="font-heading-latin-1 text-center">Andrew</div>
+              <p class="text-body-1">Teuku Andrew Amalul Ahli Taufiq Qul, S.Ars</p>
+              <p class="text-body-4">Putra dari Alm. Bapak Teuku Muhammad Taufiq (Pipi) &amp; Ibu Elvi</p>
+              <div class="invites-icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-curly">
+            <img src="assets/decorations/bell-bow-cream.png" style="max-width: 65px; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4));" alt="AE Monogram Ribbon" />
+          </div>
+
+          <div class="couple girl mt-3" data-aos="fade-left">
+            <img src="assets/img/girl.webp" class="wedding-of-frame" alt="Aulia Yasya" />
+            <div class="couple-details mt-3">
+              <div class="font-heading-latin-1 text-center">Esa</div>
+              <p class="text-body-1">Aulia Yasya Maesaroh, BA (Hons) IBM</p>
+              <p class="text-body-4">
+                Putri dari Bapak H. Masrani (H. Utuh) &amp; Ibu Hj. Yayuk
+              </p>
+              <div class="invites-icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="custom-container" data-aos="fade-down">
+          <div class="countdown-section-elegant text-center w-100">
+            <h1 class="font-heading-latin-1 font-title my-2">Catat Tanggalnya</h1>
+            <p class="text-body-5 mb-4" style="color: var(--wedding-burgundy-stripe); font-weight: 600;">Sabtu, 3 Oktober 2026</p>
+            
+            <div class="d-flex justify-content-center w-100 countdown-box-container">
+              <div class="d-flex flex-column align-items-center justify-content-center countdown-box-elegant">
+                <span class="countdown-number-elegant" id="cd-days">00</span>
+                <span class="countdown-label-elegant">HARI</span>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center countdown-box-elegant">
+                <span class="countdown-number-elegant" id="cd-hours">00</span>
+                <span class="countdown-label-elegant">JAM</span>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center countdown-box-elegant">
+                <span class="countdown-number-elegant" id="cd-minutes">00</span>
+                <span class="countdown-label-elegant">MENIT</span>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center countdown-box-elegant">
+                <span class="countdown-number-elegant" id="cd-seconds">00</span>
+                <span class="countdown-label-elegant">DETIK</span>
+              </div>
+            </div>
+
+            <p class="text-body-4 mt-4 px-3 countdown-text-elegant mx-auto">
+              Kami sangat menantikan kehadiran Anda untuk merayakan momen bahagia ini bersama,
+              diiringi dengan doa, tawa, dan kenangan indah.
+            </p>
+
+            <button class="btn btn-invites mt-3 countdown-btn-elegant">
+              Simpan ke Kalender
+              <i class="bi bi-calendar countdown-icon-elegant"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- Detail Acara (Ceremony & Reception) -->
+        <section
+          id="wedding-day"
+          class="custom-container"
+          data-aos="fade-down"
+        >
+          <div class="wd-container frame-rounded" data-aos="fade-left">
+            <div class="custom-container wd-content">
+              <img src="assets/decorations/bell-bow.png" class="wd-ornament" alt="Akad Nikah" />
+              <h1 class="font-title reseptionist">Akad Nikah</h1>
+              <div class="text-body-5 fw-bold">Sabtu, 3 Oktober 2026</div>
+              <div class="text-body-5 mt-2">08:00 WITA - Selesai</div>
+              <div class="divider mt-3">
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <div class="text-body-1 mt-3">Ballroom Hotel Mesra Samarinda</div>
+              <div class="text-body-5 mt-2">
+                Jl. Pahlawan No.1, Dadi Mulya, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75123
+              </div>
+              <a href="https://maps.google.com/?q=Hotel+Mesra+Samarinda" target="_blank" class="btn btn-invites my-3 text-decoration-none">
+                <i class="bi bi-geo-alt"></i> View Maps
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="wd-container frame-rounded"
+            style="margin-top: 40px"
+            data-aos="fade-left"
+          >
+            <div class="custom-container wd-content">
+              <img src="assets/decorations/bell-bow.png" class="wd-ornament" alt="Resepsi" />
+              <h1 class="font-title reseptionist">Resepsi</h1>
+              <div class="text-body-5 fw-bold">Sabtu, 3 Oktober 2026</div>
+              <div class="text-body-5 mt-2">11:00 WITA - Selesai</div>
+              <div class="divider mt-3">
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <div class="text-body-1 mt-3">Ballroom Hotel Mesra Samarinda</div>
+              <div class="text-body-5 mt-2">
+                Jl. Pahlawan No.1, Dadi Mulya, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75123
+              </div>
+              <a href="https://maps.google.com/?q=Hotel+Mesra+Samarinda" target="_blank" class="btn btn-invites my-3 text-decoration-none">
+                <i class="bi bi-geo-alt"></i> View Maps
+              </a>
+            </div>
+          </div>
+
+          <br />
+        </section>
+
+        <!-- Our Story -->
+        <section
+          id="our-story"
+          class="d-flex justify-content-center flex-column align-items-center position-relative"
+          data-aos="fade-up"
+        >
+          <h1 class="font-title my-3">Our Story</h1>
+          <br />
+          <div class="story-wrapper">
+            <div class="timeline-line"></div>
+
+            <div class="story-card js-reveal" data-aos="fade-up">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/2.webp" class="story-img" alt="Awal Pertemuan" />
+              <div class="p-3">
+                <h3 class="font-heading3">Awal Pertemuan</h3>
+                <p class="story-text">
+                  Pertemuan yang berawal dari sebuah takdir sederhana, membawa langkah kami menuju satu tujuan bersama...
+                </p>
+              </div>
+            </div>
+
+            <div class="story-card js-reveal" data-aos="fade-up">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/3.webp" class="story-img" alt="Komitmen" />
+              <div class="p-3">
+                <h3 class="font-heading3">Menjalin Cerita</h3>
+                <p class="story-text">
+                  Setiap perjalanan selalu dipenuhi tawa dan doa, meneguhkan keyakinan untuk melangkah ke jenjang yang lebih bermakna...
+                </p>
+              </div>
+            </div>
+
+            <div class="story-card js-reveal" data-aos="fade-up">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/4.webp" class="story-img" alt="Lamaran" />
+              <div class="p-3">
+                <h3 class="font-heading3">Lamaran</h3>
+                <p class="story-text">
+                  Dengan restu kedua orang tua dan sanak keluarga, kami mengikat janji suci untuk melangkah ke pernikahan...
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section
+          id="gallery"
+          class="d-flex justify-content-center flex-column align-items-center"
+          data-aos="fade-up"
+        >
+          <h1 class="font-title badge" style="background: rgba(44, 67, 45, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--wedding-cream); color: var(--wedding-cream); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); font-size: 2rem; padding: 10px 25px;">Gallery</h1>
+          <br />
+          <div class="row g-2 m-0 mx-md-2 position-relative z-3 w-100 px-2">
+            <div class="col-md-12 gallery-item">
+              <a
+                href="assets/img/prewedding/1.webp"
+                data-fancybox="gallery"
+                data-caption="Andrew &amp; Esa #1"
+              >
+                <img
+                  src="assets/img/prewedding/1.webp"
+                  alt="Gallery 1"
+                  class="gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-12 gallery-item">
+              <div class="row g-2">
+                <div class="col-8 gallery-item">
+                  <a
+                    href="assets/img/prewedding/6.webp"
+                    data-fancybox="gallery"
+                    data-caption="Andrew &amp; Esa #2"
+                  >
+                    <img
+                      src="assets/img/prewedding/6.webp"
+                      alt="Gallery 2"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-4 gallery-item">
+                  <a
+                    href="assets/img/prewedding/2.webp"
+                    data-fancybox="gallery"
+                    data-caption="Andrew &amp; Esa #3"
+                  >
+                    <img
+                      src="assets/img/prewedding/2.webp"
+                      alt="Gallery 3"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-4 gallery-item">
+                  <a
+                    href="assets/img/prewedding/3.webp"
+                    data-fancybox="gallery"
+                    data-caption="Andrew &amp; Esa #4"
+                  >
+                    <img
+                      src="assets/img/prewedding/3.webp"
+                      alt="Gallery 4"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 gallery-item">
+                  <a
+                    href="assets/img/prewedding/4.webp"
+                    data-fancybox="gallery"
+                    data-caption="Andrew &amp; Esa #5"
+                  >
+                    <img
+                      src="assets/img/prewedding/4.webp"
+                      alt="Gallery 5"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" data-aos="fade-down">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/evjZQ-Fn_aQ?si=z-4S4cpvpN9iTQ6L"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- Attendance / RSVP & Comment -->
+        <section id="attendance">
+          <section
+            id="reservation"
+            class="custom-container"
+            data-aos="fade-right"
+          >
+            <h1 class="font-title">Reservation</h1>
+            <div class="form-container">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="name"
+                  name="name"
+                  placeholder="Nama Lengkap"
+                />
+                <label for="name">Nama Lengkap</label>
+              </div>
+
+              <div class="form-floating mt-2 w-100">
+                <select
+                  class="form-select custom-input"
+                  id="status"
+                  name="status"
+                  aria-label="Konfirmasi Kehadiran"
+                >
+                  <option value="iya" selected>Ya, saya akan hadir.</option>
+                  <option value="tidak">Mohon maaf, saya belum bisa hadir.</option>
+                </select>
+                <label for="status">Konfirmasi Kehadiran</label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-invites w-100"
+                style="z-index: 10"
+              >
+                Kirim Konfirmasi <i class="bi bi-send ms-1"></i>
+              </button>
+            </div>
+          </section>
+
+          <section id="comment" class="custom-container" data-aos="fade-left">
+            <h1 class="font-title">Ucapan &amp; Doa</h1>
+            <div class="form-comment-container">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  id="gvyw"
+                  name="comment"
+                  class="form-control custom-input"
+                  placeholder="Tulis Ucapan &amp; Doa"
+                />
+                <label for="gvyw">Tulis Ucapan &amp; Doa</label>
+              </div>
+              <button type="submit" class="btn btn-invites w-100">
+                Kirim Ucapan <i class="bi bi-send ms-1"></i>
+              </button>
+            </div>
+
+            <div class="comment-container">
+              <div class="comment-item">
+                <div class="sender badge">Dimas &amp; Keluarga</div>
+                <div class="time">11 Feb 2025, 22:05</div>
+                <div class="content">
+                  Selamat berbahagia untuk Andrew &amp; Esa! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Aamiin.
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="sender badge">Shafa</div>
+                <div class="time">12 Feb 2025, 09:15</div>
+                <div class="content">
+                  Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khair. Lancar sampai hari H!
+                </div>
+              </div>
+            </div>
+
+            <div class="comment-container">
+              <button type="button" class="btn btn-invites w-100">
+                Lihat Lebih Banyak <i class="bi bi-plus-circle ms-1"></i>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <!-- Wedding Gift Section -->
+        <section
+          id="wedding-gift"
+          class="custom-container"
+          data-aos="fade-down"
+        >
+          <div class="wg-container">
+            <h1 class="font-title">Wedding Gift</h1>
+            <div class="text-body-2 mt-2">
+              Doa restu Anda merupakan karunia yang paling berarti bagi kami. Dan jika Anda ingin memberi tanda kasih, kami menyediakan amplop digital di bawah ini:
+            </div>
+            <hr class="w-100 my-3" />
+            <div class="form-container w-100">
+              <ul
+                class="nav nav-tabs flex justify-content-center"
+                id="wg-nav-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#bank"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    E-Angpao
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Gift Registry
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content w-100 mt-3" id="wg-tab">
+                <div
+                  class="tab-pane fade show active"
+                  id="bank"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="reservation-status w-100">
+                    <div class="card-wg mt-2">
+                      <div>
+                        <p class="fw-bold" style="letter-spacing: 1px;">BANK BCA</p>
+                        <p style="font-size: 13px; opacity: 0.8;">Nomor Rekening</p>
+                        <p class="fw-bold fs-5" style="letter-spacing: 1px;">1234567890</p>
+                        <p style="font-size: 13px; opacity: 0.9;">a.n. Teuku Andrew / Aulia Yasya</p>
+                      </div>
+                      <img
+                        src="assets/img/qr.webp"
+                        style="width: 85px; border-radius: 8px;"
+                        alt="qr-bank"
+                      />
+                    </div>
+                    <hr class="my-3" />
+                  </div>
+
+                  <div class="form-bank">
+                    <div class="input-group">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-person"></i>
+                      </span>
+                      <input
+                        type="text"
+                        id="bank-name"
+                        name="bank-name"
+                        class="form-control custom-input"
+                        placeholder="Nama Pengirim"
+                      />
+                    </div>
+                    <div class="input-group mt-2">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-cash"></i>
+                      </span>
+                      <input
+                        type="text"
+                        id="bank-amounr"
+                        name="bank-amounr"
+                        class="form-control custom-input"
+                        placeholder="Nominal (Rp.)"
+                      />
+                    </div>
+                    <div class="input-group mt-2">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input
+                        type="email"
+                        id="bank-email"
+                        name="bank-email"
+                        class="form-control custom-input"
+                        placeholder="Alamat Email"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-invites mt-3 mx-auto d-block w-100"
+                    >
+                      Kirim Konfirmasi <i class="bi bi-send ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <p class="text-center p-3 text-body-2">
+                    Anda bisa memberikan hadiah melalui wedding gift list berikut. Klik tombol di bawah untuk melihat pilihan kado pernikahan.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-invites w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-wg"
+                  >
+                    <i class="bi bi-gift-fill me-1"></i> Buka Kado Pilihan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section id="quote" class="custom-container" data-aos="fade-down">
+          <div class="quote-container text-center">
+            <div class="text-body-2">
+              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
+              cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+              antaramu rasa kasih dan sayang."
+            </div>
+            <div class="font-heading3 text-center mt-3 surah">
+              (QS. Ar-Rum: 21)
+            </div>
+          </div>
+        </section>
+
+        <!-- Thanks / Closing Section with Cat Couple -->
+        <section id="thanks" data-aos="fade-down">
+          <div class="custom-container" data-aos="fade-down">
+            <div class="thanks-frame">
+              <div class="custom-container thanks-content">
+                <img src="assets/decorations/cat-couple.png" class="thanks-cat" alt="Andrew &amp; Esa Cat Couple" />
+                <div class="thanks-bottom">
+                  <p class="text-body-5">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+                  </p>
+                  <h1 class="header-1 font-heading">
+                    Andrew <br />&amp;<br />
+                    Esa
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer-right" class="custom-container">
+          <div class="text-body-2">
+            <b>Andrew &amp; Esa Wedding Invitation</b>
+          </div>
+          <div class="social-media my-3">
+            <a href="#" class="invites-icon" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="invites-icon" aria-label="Website">
+              <i class="bi bi-globe"></i>
+            </a>
+            <a href="#" class="invites-icon" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <div class="text-body-2" style="font-size: 13px; opacity: 0.8;">
+            &copy; 2026 Andrew &amp; Esa. All rights reserved.
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- Floating Audio Control -->
+    <section
+      class="music-outer aos-init aos-animate"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <div class="music-box auto" id="music-box" title="Putar Musik"></div>
+    </section>
+
+    <!-- Modal Gift -->
+    <div
+      class="modal fade"
+      id="modal-wg"
+      tabindex="-1"
+      aria-labelledby="modal-wg"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: var(--wedding-blush); border: 2px solid var(--wedding-burgundy); border-radius: 20px;">
+          <div class="modal-header" style="border-bottom: 1px solid var(--wedding-rose-pink);">
+            <h5 class="modal-title" style="color: var(--wedding-burgundy); font-family: 'iskri', sans-serif;">Pilihan Kado Pernikahan</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+              <div class="card bg-wg" style="background-color: var(--wedding-forest-dark); border: 1px solid var(--wedding-cream); border-radius: 15px; overflow: hidden; width: 100%;">
+                <img
+                  src="assets/img/Water-Boiler-Fomac.webp"
+                  class="card-img-top"
+                  alt="Water Boiler Fomac"
+                  style="height: 180px; object-fit: cover;"
+                />
+                <div class="card-body text-center">
+                  <p class="card-title fw-bold" style="color: var(--wedding-cream);">
+                    Water Boiler Fomac
+                  </p>
+                  <p class="card-text" style="color: var(--wedding-soft-pink);">Rp. 370.000</p>
+                  <a href="#" class="btn btn-invites w-100">Kirim Kado Ini</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/dotlottie-player.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Live Countdown & Story Reveal Scripts -->
+    <script>
+      const revealItems = document.querySelectorAll(".js-reveal");
+
+      function revealOnScroll() {
+        revealItems.forEach((item) => {
+          const pos = item.getBoundingClientRect().top;
+          if (pos < window.innerHeight - 50) item.classList.add("reveal");
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll, { passive: true });
+      window.addEventListener("load", revealOnScroll);
+      document.addEventListener("DOMContentLoaded", revealOnScroll);
+
+      function startCountdown() {
+        const targetDate = new Date("October 3, 2026 08:00:00").getTime();
+
+        function update() {
+          const now = new Date().getTime();
+          const difference = targetDate - now;
+
+          if (difference > 0) {
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            const dEl = document.getElementById("cd-days");
+            const hEl = document.getElementById("cd-hours");
+            const mEl = document.getElementById("cd-minutes");
+            const sEl = document.getElementById("cd-seconds");
+
+            if (dEl) dEl.innerText = days < 10 ? "0" + days : days;
+            if (hEl) hEl.innerText = hours < 10 ? "0" + hours : hours;
+            if (mEl) mEl.innerText = minutes < 10 ? "0" + minutes : minutes;
+            if (sEl) sEl.innerText = seconds < 10 ? "0" + seconds : seconds;
+          }
+        }
+
+        update();
+        setInterval(update, 1000);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        startCountdown();
+
+        // Dynamic guest name from URL parameter (?to=Nama+Tamu or ?u=Nama)
+        const urlParams = new URLSearchParams(window.location.search);
+        const guest = urlParams.get("to") || urlParams.get("u") || urlParams.get("nama");
+        if (guest) {
+          const guestEl = document.getElementById("guest-name");
+          if (guestEl) guestEl.innerText = decodeURIComponent(guest);
+        }
+      });
+    </script>
+  </body>
+</html>

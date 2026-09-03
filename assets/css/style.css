@@ -1,0 +1,1460 @@
+@font-face {
+  font-family: "brilon";
+  src: url("../font/brilon.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iskri";
+  src: url("../font/Batusa.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "pinyon";
+  src: url("../font/pinyon script.woff2") format("opentype");
+}
+
+@font-face {
+  font-family: "iskri";
+  src: url("../font/iskri.woff2") format("opentype");
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 200%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+:root {
+  /* Wedding Asset Pack Palette */
+  --wedding-forest: #324a33;
+  --wedding-forest-dark: #2c432d;
+  --wedding-burgundy: #871d33;
+  --wedding-burgundy-stripe: #b65767;
+  --wedding-blush: #fce3ec;
+  --wedding-rose-pink: #f599b5;
+  --wedding-soft-pink: #f9c7da;
+  --wedding-cream: #faf9d1;
+  --wedding-olive: #8f9060;
+  --wedding-olive-light: #c3c092;
+  --wedding-rose-gold: #d9898f;
+
+  --heading-family: "brilon", serif;
+  --heading-style: normal;
+  --heading-weight: 550;
+  --heading-size: 4.2rem;
+  --heading-size-mobile: 2.3rem;
+  --heading-lettercase: none;
+  --body-text-family: "iskri", serif;
+
+  --background-primary: var(--wedding-forest);
+  --text-primary: var(--wedding-cream) !important;
+  --text-secondary: var(--wedding-forest);
+  --button-background-primary: var(--wedding-burgundy);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.meirahmawati {
+  background-color: var(--wedding-forest-dark);
+  color: var(--wedding-cream);
+  font-family: var(--body-text-family);
+  overflow-x: hidden;
+}
+
+.meirahmawati img {
+  max-width: 100%;
+}
+
+/* Background Pattern Utilities */
+.bg-burgundy-stripes {
+  background: url("../backgrounds/burgundy-stripes.svg") repeat;
+}
+.bg-forest-stripes {
+  background: url("../backgrounds/forest-stripes.svg") repeat;
+}
+.bg-olive-stripes {
+  background: url("../backgrounds/olive-stripes.svg") repeat;
+}
+.bg-harlequin {
+  background: url("../backgrounds/cream-forest-harlequin.svg") repeat;
+}
+.bg-pink-geometric {
+  background: url("../backgrounds/pink-geometric.svg") repeat;
+}
+
+/* Primary Button */
+.btn-invites {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--wedding-burgundy),
+    var(--wedding-burgundy-stripe)
+  );
+  background-color: var(--wedding-burgundy);
+  border: 2px solid var(--wedding-cream) !important;
+  color: var(--wedding-cream);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+}
+
+.btn-invites::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 6s infinite;
+}
+
+.btn-invites:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.btn-invites:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings & Typography */
+body.meirahmawati h1,
+body.meirahmawati h2,
+body.meirahmawati h3,
+body.meirahmawati h4,
+body.meirahmawati h5,
+body.meirahmawati h6 {
+  font-family: var(--heading-family);
+  font-style: var(--heading-style);
+  font-weight: var(--heading-weight);
+  font-size: var(--heading-size);
+  text-transform: var(--heading-lettercase);
+  line-height: normal;
+  text-align: center;
+}
+
+.font-body {
+  font-family: var(--body-text-family) !important;
+}
+
+.font-heading {
+  color: var(--wedding-cream);
+  font-family: "pinyon", Sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+}
+
+.font-heading-latin-1 {
+  color: var(--wedding-cream);
+  font-family: "pinyon", Sans-serif;
+  font-size: 3rem !important;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.font-heading3 {
+  color: var(--wedding-burgundy);
+  font-family: "iskri", Sans-serif !important;
+  font-size: 30px !important;
+  letter-spacing: 1.5px;
+  font-weight: 600 !important;
+  text-align: left !important;
+}
+
+.font-title {
+  font-family: "iskri", Sans-serif !important;
+  color: var(--wedding-burgundy);
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+}
+
+.header-1 {
+  font-size: 3rem !important;
+  text-align: center !important;
+  font-weight: var(--heading-weight) !important;
+  text-transform: var(--heading-lettercase) !important;
+  color: var(--wedding-cream);
+}
+
+.header-2 {
+  font-size: 1.2rem !important;
+  text-align: center !important;
+  font-weight: var(--heading-weight) !important;
+  text-transform: var(--heading-lettercase) !important;
+  color: var(--wedding-cream);
+}
+
+.text-body-1 {
+  color: var(--wedding-forest);
+  font-family: "iskri", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text-body-2 {
+  color: var(--wedding-forest);
+  font-family: "iskri", Sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text-body-4 {
+  color: var(--wedding-forest);
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.text-body-5 {
+  color: var(--wedding-forest);
+  font-family: "iskri", Sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.invites-icon {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--wedding-cream);
+  color: var(--wedding-burgundy) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.invites-icon:hover {
+  transform: scale(1.1);
+  background-color: var(--wedding-rose-gold);
+  color: #fff !important;
+}
+
+/* Cover Large (Desktop Fixed Left 69.5%) */
+.cover-large {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 69.5%;
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 120px;
+  padding-bottom: 60px;
+  z-index: 10;
+}
+
+.cover-large::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../decorations/forest-motif-overlay.png") center/cover no-repeat;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.cover-seal {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
+  z-index: 2;
+  filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.4));
+}
+
+.cover-large .header-1,
+.cover-large .header-2 {
+  color: var(--wedding-cream) !important;
+  z-index: 2;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Container (Right 30.5% Desktop, 100% Mobile) */
+.main {
+  width: 30.5%;
+  margin-left: auto;
+  background-color: var(--wedding-forest-dark);
+  min-height: 100dvh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.35);
+}
+
+.main-bg {
+  position: fixed;
+  width: 30.5%;
+  height: 100dvh;
+  object-fit: cover;
+  z-index: -9999;
+  top: 0;
+  right: 0;
+  background-color: var(--wedding-forest-dark);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+}
+
+@media (max-width: 768px) {
+  .header-1 {
+    font-size: var(--heading-size-mobile) !important;
+  }
+  .main-bg {
+    width: 100%;
+  }
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Welcome Screen - Royal Arch Remake */
+#welcome {
+  min-height: 100dvh;
+  width: 100%;
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 14px;
+  overflow-y: auto;
+}
+
+.welcome-bg-motif {
+  position: absolute;
+  inset: 0;
+  background: url("../decorations/forest-motif-overlay.png") center/cover no-repeat;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.welcome-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-card-royal {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #2c432d 0%, #1c2d1e 100%);
+  border: 2px solid var(--wedding-cream);
+  border-radius: 150px 150px 24px 24px;
+  padding: 26px 16px 20px 16px;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3px rgba(250, 249, 209, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Corner Florals */
+.welcome-floral-left {
+  position: absolute;
+  top: -8px;
+  left: -14px;
+  width: 75px;
+  pointer-events: none;
+  z-index: 5;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.welcome-floral-right {
+  position: absolute;
+  top: -8px;
+  right: -14px;
+  width: 75px;
+  pointer-events: none;
+  z-index: 5;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+/* Top Monogram Seal */
+.welcome-seal-wrapper {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.welcome-seal-img {
+  width: 68px;
+  height: 68px;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
+  animation: sealFloat 4s ease-in-out infinite;
+}
+
+@keyframes sealFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* Portrait Window */
+.welcome-portrait-window {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  height: 195px;
+  margin-top: 12px;
+  border-radius: 120px 120px 16px 16px;
+  overflow: hidden;
+  border: 1.5px solid var(--wedding-cream);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 6s ease;
+}
+
+.welcome-card-royal:hover .welcome-portrait-img {
+  transform: scale(1.04);
+}
+
+.welcome-portrait-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(44, 67, 45, 0.15) 65%,
+    rgba(44, 67, 45, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+/* Locket Ribbon Divider */
+.welcome-locket-divider {
+  margin: 10px 0 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-locket-divider img {
+  max-width: 42px;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+/* Typography */
+.welcome-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-pretitle {
+  color: var(--wedding-cream);
+  font-family: var(--body-text-family);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 2px 0;
+  opacity: 0.9;
+}
+
+.welcome-couple-name {
+  color: var(--wedding-cream) !important;
+  font-family: "pinyon", cursive !important;
+  font-size: 3.1rem !important;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 4px 0;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-date {
+  color: var(--wedding-soft-pink);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px 0;
+}
+
+/* Guest Card */
+.welcome-guest-card {
+  width: 92%;
+  background: rgba(250, 249, 209, 0.08);
+  border: 1px solid rgba(250, 249, 209, 0.3);
+  border-radius: 12px;
+  padding: 8px 14px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.guest-salutation {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--wedding-soft-pink);
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.guest-name {
+  color: var(--wedding-cream) !important;
+  font-family: "iskri", serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/* Button & Action */
+.welcome-action-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-welcome-action {
+  width: 88% !important;
+  padding: 10px 22px !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  border-radius: 50px !important;
+  border: 1.5px solid var(--wedding-cream) !important;
+  box-shadow:
+    0 6px 18px rgba(135, 29, 51, 0.4),
+    0 0 15px rgba(250, 249, 209, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-welcome-action:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 10px 25px rgba(135, 29, 51, 0.6),
+    0 0 25px rgba(250, 249, 209, 0.35) !important;
+}
+
+.welcome-sound-hint {
+  font-size: 0.72rem;
+  color: var(--wedding-soft-pink);
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vh;
+  height: 100dvh;
+  width: 90%;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Section (After opening invitation) */
+#header {
+  position: relative;
+  height: 100dvh;
+  margin: 0;
+  gap: 10px;
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../decorations/forest-motif-overlay.png") center/cover no-repeat;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+#header .header-1,
+#header .header-2 {
+  color: var(--wedding-cream) !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-seal {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+/* Couple Profile Section */
+#wedding-of {
+  background-color: var(--wedding-forest-dark);
+  border-radius: 40px;
+  border: 3px solid var(--wedding-cream);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+  margin: 35px 20px 35px 20px;
+  padding-top: 50px;
+  padding-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+#wedding-of .font-title {
+  color: var(--wedding-cream) !important;
+}
+
+#wedding-of .font-heading-latin-1 {
+  color: var(--wedding-rose-pink) !important;
+}
+
+#wedding-of .text-body-1 {
+  color: var(--wedding-cream) !important;
+}
+
+#wedding-of .text-body-4 {
+  color: var(--wedding-soft-pink) !important;
+}
+
+.wedding-floral-left {
+  position: absolute;
+  left: -25px;
+  top: 60px;
+  width: 100px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wedding-floral-right {
+  position: absolute;
+  right: -25px;
+  bottom: 80px;
+  width: 100px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.couple-details {
+  width: 75%;
+  position: relative;
+  z-index: 2;
+}
+
+.wedding-of-frame {
+  max-width: 80%;
+  border-radius: 200px;
+  width: 80%;
+  height: 380px;
+  object-fit: cover;
+  border: 4px solid var(--wedding-cream);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+.couple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.divider-curly {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+  box-sizing: border-box;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.divider-curly::before,
+.divider-curly::after {
+  content: "";
+  display: block;
+  width: 32%;
+  min-width: 70px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--wedding-cream) 20%,
+    var(--wedding-cream) 80%,
+    transparent 100%
+  );
+  border-radius: 50px;
+}
+
+.divider-curly > span {
+  font-size: 7dvh;
+  font-family: "pinyon", cursive;
+  color: var(--wedding-rose-pink) !important;
+  line-height: 1;
+  display: inline-block;
+  padding: 0 6px;
+  z-index: 3;
+}
+
+/* Countdown Section */
+#countdown {
+  position: relative;
+  overflow: hidden;
+  background: url("../backgrounds/pink-geometric.svg") repeat;
+  padding: 60px 0;
+}
+
+.countdown-section-elegant {
+  min-height: auto;
+  padding: 45px 20px;
+  margin: 0 20px;
+  background: #ffffff;
+  border-radius: 35px;
+  border: 2px solid var(--wedding-rose-pink);
+  box-shadow: 0px 10px 30px rgba(135, 29, 51, 0.12);
+  position: relative;
+}
+
+.countdown-section-elegant .font-title {
+  color: var(--wedding-burgundy) !important;
+}
+
+.countdown-box-container {
+  gap: 12px;
+}
+
+.countdown-box-elegant {
+  width: 68px;
+  height: 78px;
+  background: var(--wedding-blush);
+  border-radius: 14px;
+  border: 1.5px solid var(--wedding-rose-pink);
+  box-shadow: 0 4px 10px rgba(135, 29, 51, 0.08);
+}
+
+.countdown-number-elegant {
+  font-family: "iskri", serif;
+  font-size: 1.85rem;
+  line-height: 1;
+  color: var(--wedding-burgundy);
+  font-weight: 700;
+}
+
+.countdown-label-elegant {
+  font-size: 11px;
+  margin-top: 5px;
+  color: var(--wedding-burgundy-stripe);
+  font-weight: 600;
+}
+
+.countdown-text-elegant {
+  font-size: 14px;
+  color: var(--wedding-forest-dark);
+  max-width: 90%;
+}
+
+.countdown-btn-elegant {
+  padding: 10px 25px;
+  font-size: 14px;
+}
+
+.countdown-icon-elegant {
+  margin-left: 6px;
+}
+
+/* Detail Acara / Wedding Day */
+#wedding-day {
+  margin-top: 0px;
+  padding: 70px 0;
+  background: url("../backgrounds/cream-forest-harlequin.svg") repeat;
+}
+
+.wd-container {
+  position: relative;
+  z-index: 9;
+  padding: 45px 20px;
+  background: var(--wedding-blush);
+  border: 3px solid var(--wedding-burgundy);
+  border-radius: 30px;
+  box-shadow: 0px 12px 35px rgba(44, 67, 45, 0.3);
+  max-width: 90%;
+}
+
+.wd-ornament {
+  max-width: 75px;
+  margin-bottom: 15px;
+}
+
+.wd-content {
+  padding: 10px 15px;
+}
+
+.wd-container .font-title {
+  color: var(--wedding-burgundy) !important;
+}
+
+.wd-container .text-body-1 {
+  color: var(--wedding-burgundy) !important;
+  font-weight: 700;
+}
+
+.wd-container .text-body-5 {
+  color: var(--wedding-forest-dark) !important;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid var(--wedding-burgundy);
+}
+
+.divider i {
+  padding: 0 10px;
+  font-size: 1.5rem;
+  color: var(--wedding-burgundy);
+}
+
+/* Our Story Section */
+#our-story {
+  color: var(--wedding-forest-dark);
+  font-size: 16px;
+  padding: 70px 20px;
+  z-index: 2;
+  background: url("../backgrounds/pink-geometric.svg") repeat;
+}
+
+#our-story .font-title {
+  color: var(--wedding-burgundy) !important;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 8px 25px;
+  border-radius: 30px;
+  border: 2px solid var(--wedding-burgundy);
+  box-shadow: 0 4px 15px rgba(135, 29, 51, 0.15);
+}
+
+.story-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 22px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 6px;
+  top: 30px;
+  width: 3px;
+  height: 100%;
+  background: var(--wedding-burgundy);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .story-wrapper {
+    width: 92%;
+    padding-left: 20px;
+  }
+  .timeline-line {
+    left: 6px;
+  }
+}
+
+.story-card {
+  margin-left: 12px;
+  background: #ffffff;
+  border: 2px solid var(--wedding-rose-pink);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 45px;
+  box-shadow: 0 8px 25px rgba(135, 29, 51, 0.15);
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(135, 29, 51, 0.22);
+}
+
+@media (max-width: 768px) {
+  .story-card {
+    margin-left: 10px;
+  }
+  .reseptionist {
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.5px !important;
+  }
+  .surah {
+    margin-left: 15px !important;
+  }
+}
+
+.story-card.reveal {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.story-card .dot {
+  position: absolute;
+  left: -29px;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  background: var(--wedding-burgundy);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px var(--wedding-rose-pink);
+}
+
+.story-card .font-heading3 {
+  color: var(--wedding-burgundy) !important;
+}
+
+.story-img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.story-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--wedding-forest-dark);
+}
+
+/* Gallery Section */
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../backgrounds/forest-stripes.svg") repeat;
+  margin-top: 0 !important;
+  padding: 70px 15px 40px 15px;
+  height: auto;
+  position: relative;
+}
+
+#gallery .font-title {
+  color: var(--wedding-cream) !important;
+  background: rgba(44, 67, 45, 0.7) !important;
+  border: 2px solid var(--wedding-cream) !important;
+  border-radius: 30px;
+}
+
+.gallery-img {
+  object-fit: cover;
+  height: 230px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid var(--wedding-cream);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../backgrounds/forest-stripes.svg") repeat;
+  padding: 10px 15px 60px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--wedding-cream);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Attendance / RSVP / Comment */
+#attendance {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+}
+
+#reservation {
+  width: 93%;
+  margin: 0 auto 30px auto;
+  border-radius: 35px;
+  height: auto;
+  padding: 40px 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+  background-color: var(--wedding-blush);
+  border: solid 3px var(--wedding-burgundy);
+}
+
+#comment {
+  padding: 40px 20px;
+  border-radius: 35px;
+  width: 93%;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+  background-color: var(--wedding-blush);
+  border: solid 3px var(--wedding-burgundy);
+}
+
+#reservation .font-title,
+#comment .font-title {
+  color: var(--wedding-burgundy) !important;
+}
+
+.form-container,
+.form-comment-container {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+.comment-item {
+  background: #ffffff;
+  border: 1px solid var(--wedding-rose-pink);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 12px rgba(135, 29, 51, 0.08);
+}
+
+.comment-item .sender {
+  font-weight: bold;
+  background-color: var(--wedding-burgundy) !important;
+  color: var(--wedding-cream) !important;
+}
+
+.comment-item .time {
+  color: #777;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.comment-item .content {
+  color: var(--wedding-forest-dark);
+  margin-top: 6px;
+}
+
+/* Wedding Gift Section */
+#wedding-gift {
+  margin-top: 0;
+  padding: 70px 0;
+  background: url("../backgrounds/olive-stripes.svg") repeat;
+}
+
+.wg-container {
+  width: 90%;
+  position: relative;
+  border-radius: 30px;
+  padding: 40px 20px;
+  margin: 20px;
+  border: 3px solid var(--wedding-cream);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+.wg-container .font-title {
+  color: var(--wedding-forest) !important;
+}
+
+.wg-container .text-body-2 {
+  color: var(--wedding-forest-dark);
+}
+
+#wg-nav-tab {
+  background-color: var(--wedding-olive);
+  border-radius: 50px;
+  padding: 5px;
+  border: none;
+}
+
+#wg-nav-tab li button {
+  color: var(--wedding-cream);
+  border-radius: 50px;
+}
+
+#wg-nav-tab li button.active {
+  background-color: var(--wedding-burgundy);
+  color: var(--wedding-cream);
+}
+
+.card-wg {
+  background-color: var(--wedding-forest-dark);
+  border: 2px solid var(--wedding-cream);
+  border-radius: 16px;
+  color: var(--wedding-cream);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-wg p {
+  margin: 0;
+}
+
+.form-floating > label {
+  color: #6c757d !important;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 5;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-select:focus ~ label {
+  color: var(--wedding-burgundy) !important;
+  font-weight: 600;
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: var(--wedding-forest-dark) !important;
+  font-weight: 600;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  color: var(--wedding-forest-dark) !important;
+  font-weight: 600;
+  background-color: #ffffff !important;
+  border: 1.5px solid var(--wedding-rose-pink) !important;
+  border-radius: 14px !important;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-select:focus {
+  border-color: var(--wedding-burgundy) !important;
+  box-shadow: 0 0 0 0.25rem rgba(135, 29, 51, 0.15) !important;
+}
+
+.form-floating > .form-control::placeholder {
+  color: transparent !important;
+}
+
+.form-floating > .form-control:focus::placeholder {
+  color: #adb5bd !important;
+}
+
+.custom-input {
+  background-color: #ffffff !important;
+  border: 1.5px solid var(--wedding-rose-pink) !important;
+  border-radius: 12px !important;
+  color: var(--wedding-forest-dark) !important;
+  font-weight: 600;
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: #7a7a7a !important;
+  font-weight: 400;
+}
+
+.custom-input:focus {
+  background-color: #ffffff !important;
+  border-color: var(--wedding-burgundy) !important;
+  box-shadow: 0 0 0 0.25rem rgba(135, 29, 51, 0.15) !important;
+}
+
+.form-bank {
+  margin-top: -5px;
+  width: 100%;
+}
+
+/* Quote Section */
+#quote {
+  padding: 60px 0;
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+}
+
+.quote-container {
+  width: 90%;
+  position: relative;
+  border-radius: 25px;
+  padding: 40px 25px;
+  margin: 20px;
+  border: 2px solid var(--wedding-cream);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+  background-color: var(--wedding-forest-dark);
+}
+
+.quote-container .text-body-2 {
+  color: var(--wedding-cream);
+  font-style: italic;
+}
+
+.quote-container .surah {
+  color: var(--wedding-rose-gold) !important;
+}
+
+/* Thanks / Closing Section */
+#thanks {
+  background-color: var(--wedding-forest);
+  background-image: url("../backgrounds/forest-stripes.svg");
+  background-repeat: repeat;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+.thanks-frame {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+}
+
+.thanks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.45);
+  padding: 40px 20px 50px 20px;
+  border-radius: 40px;
+  margin: 20px;
+  background-color: var(--wedding-forest-dark);
+  border: 3px solid var(--wedding-cream);
+  overflow: hidden;
+}
+
+.thanks-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../decorations/forest-motif-overlay.png") center/cover no-repeat;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.thanks-cat {
+  max-width: 130px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+  position: relative;
+  z-index: 2;
+}
+
+.thanks-bottom {
+  padding-bottom: 0;
+  z-index: 9;
+  text-align: center;
+}
+
+.thanks-bottom .text-body-5 {
+  color: var(--wedding-cream) !important;
+  font-weight: 500 !important;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.thanks-bottom .header-1 {
+  color: var(--wedding-cream) !important;
+  font-size: 3rem !important;
+  margin-top: 20px;
+  font-weight: 900 !important;
+}
+
+/* Footer Section */
+#footer-right {
+  background-color: var(--wedding-forest-dark);
+  padding: 40px 0;
+  border-top: 1px solid rgba(250, 249, 209, 0.2);
+}
+
+#footer-right .text-body-2 {
+  color: var(--wedding-cream) !important;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+#footer-right .invites-icon {
+  background-color: var(--wedding-burgundy);
+  color: var(--wedding-cream) !important;
+}
+
+#footer-right .invites-icon:hover {
+  background-color: var(--wedding-rose-gold);
+}
+
+/* Floating Elements: QR Invitation & Music */
+.qr-invitation {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  width: 250px;
+  background-color: var(--wedding-blush);
+  border: 2px solid var(--wedding-burgundy);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0.6rem;
+  height: 60px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.qr-invitation.expanded {
+  height: 300px !important;
+}
+
+.music-outer {
+  position: fixed;
+  z-index: 999;
+  bottom: 15px;
+  left: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.music-outer .music-box {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  background-image: url("../img/music.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.8s cubic-bezier(0.23, 0.56, 0.38, 0.78);
+}
+
+@media (max-width: 767.98px) {
+  .cover-large {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+  }
+  .main {
+    width: 100%;
+  }
+  .music-outer .music-box {
+    width: 45px;
+    height: 45px;
+  }
+}
