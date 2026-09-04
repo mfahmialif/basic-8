@@ -905,9 +905,45 @@ body.meirahmawati h6 {
 #our-story {
   color: var(--wedding-forest-dark);
   font-size: 16px;
-  padding: 70px 20px;
+  padding: 65px 20px;
   z-index: 2;
+  position: relative;
   background: url("../backgrounds/pink-geometric.svg") repeat;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-scallop-top {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  z-index: 10;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.story-scallop-top img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.story-scallop-bottom {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  z-index: 10;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.story-scallop-bottom img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 #our-story .font-title {
@@ -924,31 +960,42 @@ body.meirahmawati h6 {
   width: 90%;
   max-width: 480px;
   margin: 0 auto;
-  padding-left: 22px;
+  padding-left: 36px;
+}
+
+.timeline-track {
+  position: absolute;
+  left: 15.6px;
+  transform: translateX(-50%);
+  top: 36px;
+  width: 3px;
+  height: calc(100% - 90px);
+  background: rgba(135, 29, 51, 0.2);
+  border-radius: 2px;
+  z-index: 1;
 }
 
 .timeline-line {
   position: absolute;
-  left: 6px;
-  top: 30px;
+  left: 15.6px;
+  transform: translateX(-50%);
+  top: 36px;
   width: 3px;
-  height: 100%;
+  max-height: calc(100% - 90px);
   background: var(--wedding-burgundy);
-  opacity: 0.8;
+  border-radius: 2px;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
   .story-wrapper {
     width: 92%;
-    padding-left: 20px;
-  }
-  .timeline-line {
-    left: 6px;
+    padding-left: 36px;
   }
 }
 
 .story-card {
-  margin-left: 12px;
+  margin-left: 0;
   background: #ffffff;
   border: 2px solid var(--wedding-rose-pink);
   border-radius: 20px;
@@ -968,7 +1015,7 @@ body.meirahmawati h6 {
 
 @media (max-width: 768px) {
   .story-card {
-    margin-left: 10px;
+    margin-left: 0;
   }
   .reseptionist {
     font-size: 32px !important;
@@ -987,14 +1034,16 @@ body.meirahmawati h6 {
 
 .story-card .dot {
   position: absolute;
-  left: -29px;
-  top: 28px;
+  left: -22px;
+  top: 36px;
+  transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
   background: var(--wedding-burgundy);
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 0 0 0 3px var(--wedding-rose-pink);
+  z-index: 3;
 }
 
 .story-card .font-heading3 {
